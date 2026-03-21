@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agentic AI Hardware — Purpose-Built for Autonomous Agents</title>
-<meta name="description" content="Agentic AI hardware designed for autonomous operation. ClawBox runs multi-step AI agents 24/7, handling email, browsing, scheduling without intervention.">
-<meta name="keywords" content="agentic ai hardware, autonomous ai device, ai agent box, agentic hardware 2026, autonomous ai hardware">
+<title>Agentic AI Hardware — Run AI Agents 24/7 | ClawBox</title>
+<meta name="description" content="Agentic AI hardware that runs autonomous agents around the clock. ClawBox pairs NVIDIA Jetson Orin Nano with OpenClaw software to handle email, browsing, scheduling, and multi-step workflows — no cloud required.">
+<meta name="keywords" content="agentic ai hardware, autonomous ai device, ai agent box, agentic hardware 2026, autonomous ai hardware, clawbox, edge ai agent">
 <link rel="canonical" href="https://agentic-ai-hardware.com/">
-<meta property="og:title" content="Agentic AI Hardware — Purpose-Built for Autonomous Agents">
-<meta property="og:description" content="Agentic AI hardware designed for autonomous operation. ClawBox runs multi-step AI agents 24/7, handling email, browsing, scheduling without intervention.">
+<meta property="og:title" content="Agentic AI Hardware — Run AI Agents 24/7 | ClawBox">
+<meta property="og:description" content="Agentic AI hardware that runs autonomous agents around the clock. ClawBox pairs NVIDIA Jetson Orin Nano with OpenClaw software for multi-step AI workflows without cloud dependency.">
 <meta property="og:url" content="https://agentic-ai-hardware.com/">
 <meta property="og:image" content="https://openclawhardware.dev/clawbox-1.webp">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Agentic AI Hardware — Purpose-Built for Autonomous Agents">
-<meta name="twitter:description" content="Agentic AI hardware designed for autonomous operation. ClawBox runs multi-step AI agents 24/7, handling email, browsing, scheduling without intervention.">
+<meta name="twitter:title" content="Agentic AI Hardware — Run AI Agents 24/7 | ClawBox">
+<meta name="twitter:description" content="Agentic AI hardware that runs autonomous agents around the clock. ClawBox pairs NVIDIA Jetson Orin Nano with OpenClaw software for multi-step AI workflows without cloud dependency.">
 <meta name="robots" content="index, follow">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "ClawBox", "description": "Agentic AI hardware designed for autonomous operation. ClawBox runs multi-step AI agents 24/7, handling email, browsing, scheduling without intervention.", "brand": {"@type": "Brand", "name": "OpenClaw"}, "image": "https://openclawhardware.dev/clawbox-1.webp", "url": "https://openclawhardware.dev/", "offers": {"@type": "Offer", "price": "549", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "ClawBox", "description": "Agentic AI hardware powered by NVIDIA Jetson Orin Nano 8GB. Runs autonomous AI agents 24/7 with 67 TOPS, 512GB NVMe, 15W power draw. No cloud required.", "brand": {"@type": "Brand", "name": "OpenClaw"}, "image": "https://openclawhardware.dev/clawbox-1.webp", "url": "https://openclawhardware.dev/", "offers": {"@type": "Offer", "price": "549", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is agentic AI hardware and how does it differ from regular AI devices?","acceptedAnswer":{"@type":"Answer","text":"Agentic AI hardware is purpose-built to run autonomous AI agents that execute multi-step tasks independently. Unlike regular AI devices that respond to single prompts, agentic hardware like ClawBox maintains persistent agent sessions that handle email triage, web research, calendar management, and workflow automation around the clock without human intervention."}},{"@type":"Question","name":"Can agentic AI hardware run multiple agents simultaneously?","acceptedAnswer":{"@type":"Answer","text":"Yes. ClawBox runs multiple concurrent AI agents using the OpenClaw orchestration layer. The NVIDIA Jetson Orin Nano's 67 TOPS and 8GB unified memory support parallel agent sessions — one handling emails while another monitors web data and a third manages scheduled tasks."}},{"@type":"Question","name":"Does agentic AI hardware need an internet connection to function?","acceptedAnswer":{"@type":"Answer","text":"ClawBox can run local language models completely offline at 15 tokens per second using on-device inference. For tasks requiring external APIs or cloud models, an internet connection extends capabilities. The hybrid architecture means your agents keep working even during connectivity interruptions."}}]}</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -48,6 +49,7 @@ nav a{margin-left:1.5rem;color:var(--muted);font-size:.9rem}nav a:hover{color:va
 .feat:hover{border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
 .feat-icon{font-size:1.5rem;flex-shrink:0}
 .feat div{color:var(--muted);font-size:.95rem;line-height:1.5}
+.feat strong{color:var(--text)}
 .specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}
 .spec{background:var(--bg2);border-radius:12px;padding:1.5rem;border:1px solid var(--border);text-align:center}
 .spec .val{font-size:1.8rem;font-weight:800;color:var(--accent)}
@@ -65,9 +67,14 @@ nav a{margin-left:1.5rem;color:var(--muted);font-size:.9rem}nav a:hover{color:va
 .cmp-tbl td.hi{color:var(--text);font-weight:600}
 .cmp-tbl tr:last-child td{border-bottom:none}
 .ck{color:#22c55e}.cx{color:#ef4444}
+.content-section{max-width:1000px;margin:0 auto;padding:4rem 2rem}
+.content-section h2{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;margin-bottom:1rem}
+.content-section h2 span{color:var(--accent)}
+.content-section p{color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:1.25rem;max-width:780px}
+.content-section h3{color:var(--text);font-size:1.1rem;font-weight:700;margin:2rem 0 .75rem}
 .faq-item{background:var(--bg2);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:.75rem;border:1px solid var(--border)}
 .faq-q{font-weight:600;color:var(--text);margin-bottom:.4rem}
-.faq-a{color:var(--muted);font-size:.9rem}
+.faq-a{color:var(--muted);font-size:.9rem;line-height:1.7}
 .cta-box{background:color-mix(in srgb,var(--accent) 10%,var(--bg2));border-radius:16px;padding:3rem 2rem;text-align:center;border:1px solid color-mix(in srgb,var(--accent) 25%,transparent)}
 .cta-box h2{font-size:1.8rem;font-weight:800;margin-bottom:.75rem}
 .cta-box p{color:var(--muted);margin-bottom:2rem}
@@ -86,13 +93,14 @@ footer a{color:var(--accent)}
 @media(max-width:768px){
 .hero{padding:4rem 1.25rem}
 .section{padding:3.5rem 1.25rem}
+.content-section{padding:3rem 1.25rem}
 .trust-items{gap:1rem;font-size:.75rem}
 nav{display:none}
 }
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9FY8Q06EX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q9FY8Q06EX');</script>
-<meta name="revised" content="2026-03-15">
+<meta name="revised" content="2026-03-21">
 </head>
 <body>
 
@@ -107,12 +115,12 @@ nav{display:none}
 </header>
 
 <section class="hero">
-  <div class="badge">✨ Powered by NVIDIA Jetson Orin Nano</div>
-  <h1>Built for Autonomous <span>AI</span>. Runs 24/7.</h1>
-  <p>Agentic AI hardware designed for autonomous operation. ClawBox runs multi-step AI agents 24/7, handling email, browsing, scheduling without intervention.</p>
+  <div class="badge">✨ Powered by NVIDIA Jetson Orin Nano · 67 TOPS</div>
+  <h1><span>Agentic AI Hardware</span> That Works While You Sleep</h1>
+  <p>Deploy autonomous AI agents on dedicated hardware. <a href="https://openclawhardware.dev/" target="_blank">ClawBox</a> runs multi-step workflows 24/7 — email triage, web research, scheduling, and automation — all locally on your desk, not in someone else's cloud.</p>
   <div>
     <a href="https://openclawhardware.dev/openclaw-hardware" target="_blank" class="cta-btn">Get ClawBox — €549 →</a>
-    <a href="#features" class="cta-sec">See how it works ↓</a>
+    <a href="#about" class="cta-sec">Learn more ↓</a>
   </div>
   <p class="micro"><span>✓ 30-day money-back guarantee</span> · Free shipping EU · 5-min setup</p>
 </section>
@@ -121,32 +129,48 @@ nav{display:none}
   <div class="trust-items">
     <span>⚡ 67 TOPS NVIDIA</span>
     <span>💾 512GB NVMe SSD</span>
-    <span>💡 20W Power Draw</span>
+    <span>💡 15W Power Draw</span>
     <span>🌍 Ships Worldwide</span>
     <span>🔒 100% Private</span>
   </div>
 </div>
 
+<!-- Unique content section: 300+ words about the topic -->
+<section class="content-section" id="about">
+  <h2>What Is <span>Agentic AI Hardware</span>?</h2>
+  <p>Agentic AI hardware refers to dedicated physical devices engineered specifically to run autonomous AI agents — software systems that plan, reason, and execute multi-step tasks without continuous human oversight. Unlike traditional computing hardware that waits for user commands, agentic AI hardware is designed to maintain persistent agent sessions that operate independently around the clock.</p>
+  <p>The concept emerged from a growing frustration with cloud-based AI services. Every time you close your laptop, your ChatGPT conversation stops. Subscriptions pile up monthly. Your data lives on servers you don't control. Agentic AI hardware solves all three problems by bringing the intelligence to a compact, low-power device on your desk.</p>
+
+  <h3>Why Dedicated Hardware Matters for AI Agents</h3>
+  <p>AI agents need persistent runtime — they can't just answer a question and disappear. An agent monitoring your inbox needs to stay alive between emails. An agent researching competitors needs to browse, compare, and compile reports over hours. An agent managing your calendar needs to react to changes in real time. Cloud services charge per token for this kind of always-on behavior, and costs add up fast. Dedicated agentic AI hardware runs on a flat electricity cost of roughly €3 per month at 15 watts.</p>
+  <p><a href="https://openclawhardware.dev/" target="_blank">ClawBox</a> is the first production agentic AI hardware appliance built on NVIDIA's Jetson Orin Nano platform. It combines 67 TOPS of AI compute, 8GB LPDDR5 unified memory, and a 512GB NVMe SSD with OpenClaw — an open-source orchestration layer that connects your agents to Telegram, WhatsApp, Discord, email, and a full browser. The entire stack runs on your local network with zero cloud dependency for core operations.</p>
+
+  <h3>Who Needs Agentic AI Hardware?</h3>
+  <p>If you're a developer building agent-based applications, a privacy-conscious professional tired of sending data to third-party APIs, a small business automating repetitive tasks, or a tinkerer who wants to run local LLMs at 15 tokens per second without a power-hungry GPU rig, agentic AI hardware gives you a plug-and-play platform. ClawBox ships pre-configured — unbox, connect, scan a QR code, and your first agent is running within five minutes.</p>
+</section>
+
 <section class="section" id="features">
-  <h2 class="section-title">Why <span>Agentic AI Hardware</span></h2>
-  <p class="section-sub">Agentic AI hardware designed for autonomous operation. ClawBox runs multi-step AI agents 24/7, handling email, browsing,...</p>
+  <h2 class="section-title">Why Choose <span>Agentic AI Hardware</span></h2>
+  <p class="section-sub">Purpose-built for agents that think, act, and persist — not just respond to prompts.</p>
   <div class="feats">
-<div class="feat"><div class="feat-icon">🔄</div><div>Fully Autonomous</div></div>
-<div class="feat"><div class="feat-icon">🤖</div><div>Multi-Agent Support</div></div>
-<div class="feat"><div class="feat-icon">⏰</div><div>Scheduled Workflows</div></div>
-<div class="feat"><div class="feat-icon">🌐</div><div>Web + Email + Chat</div></div>
+<div class="feat"><div class="feat-icon">🔄</div><div><strong>Fully Autonomous</strong><br>Agents run 24/7 with persistent memory, scheduled triggers, and self-recovery. No babysitting required.</div></div>
+<div class="feat"><div class="feat-icon">🤖</div><div><strong>Multi-Agent Orchestration</strong><br>Run parallel agent sessions — one for email, one for research, one for automation — all on a single device.</div></div>
+<div class="feat"><div class="feat-icon">⏰</div><div><strong>Cron-Based Workflows</strong><br>Schedule agents with cron expressions for precise timing — daily reports, hourly monitoring, weekly digests.</div></div>
+<div class="feat"><div class="feat-icon">🌐</div><div><strong>Full Browser + Messaging</strong><br>Agents browse the web, send emails, and communicate via Telegram, WhatsApp, and Discord natively.</div></div>
+<div class="feat"><div class="feat-icon">🔒</div><div><strong>100% Local Privacy</strong><br>Your data never leaves the device. Run local LLMs or use cloud APIs — your choice, your control.</div></div>
+<div class="feat"><div class="feat-icon">⚡</div><div><strong>15W Silent Operation</strong><br>Fanless at idle, whisper-quiet under load. Runs on less power than a desk lamp — €3/month electricity.</div></div>
   </div>
 </section>
 
 <section class="section" id="specs" style="background:var(--bg2);max-width:100%;padding:4rem 2rem">
   <div style="max-width:1000px;margin:0 auto">
   <h2 class="section-title">Hardware <span>Specs</span></h2>
-  <p class="section-sub">Built on NVIDIA Jetson Orin Nano Super — the platform designed for edge AI.</p>
+  <p class="section-sub">Built on NVIDIA Jetson Orin Nano Super — the platform designed for edge AI workloads.</p>
   <div class="specs">
     <div class="spec"><div class="val">67</div><div class="lbl">TOPS AI Performance</div></div>
     <div class="spec"><div class="val">8GB</div><div class="lbl">LPDDR5 Unified Memory</div></div>
     <div class="spec"><div class="val">512GB</div><div class="lbl">NVMe SSD Storage</div></div>
-    <div class="spec"><div class="val">20W</div><div class="lbl">Power Consumption</div></div>
+    <div class="spec"><div class="val">15W</div><div class="lbl">Power Consumption</div></div>
     <div class="spec"><div class="val">15</div><div class="lbl">Tokens/sec (Llama 8B)</div></div>
     <div class="spec"><div class="val">€549</div><div class="lbl">One-Time Price</div></div>
   </div>
@@ -157,16 +181,16 @@ nav{display:none}
   <h2 class="section-title">Set Up in <span>5 Minutes</span></h2>
   <p class="section-sub">No Linux knowledge required. No Docker. No terminal. Just plug in and go.</p>
   <div class="steps">
-    <div class="step"><h3>Unbox & Power On</h3><p>Connect power and ethernet (or WiFi). Device boots automatically.</p></div>
-    <div class="step"><h3>Open clawbox.local</h3><p>Navigate to clawbox.local in your browser — no IP address needed.</p></div>
-    <div class="step"><h3>Scan QR Code</h3><p>Scan with your phone to connect Telegram, WhatsApp, or Discord.</p></div>
-    <div class="step"><h3>Start Automating</h3><p>Send a message and your AI assistant is ready to work for you.</p></div>
+    <div class="step"><h3>Unbox & Power On</h3><p>Connect power and ethernet (or WiFi). ClawBox boots automatically and is ready in under 60 seconds.</p></div>
+    <div class="step"><h3>Open clawbox.local</h3><p>Navigate to clawbox.local in any browser on your network — no IP address hunting needed.</p></div>
+    <div class="step"><h3>Scan QR Code</h3><p>Scan with your phone to connect Telegram, WhatsApp, or Discord. Your agent joins the conversation instantly.</p></div>
+    <div class="step"><h3>Deploy Your Agents</h3><p>Send a message and your AI agents start working. Schedule tasks, automate workflows, and let them run autonomously.</p></div>
   </div>
 </section>
 
 <section class="section">
   <h2 class="section-title"><span>Compare</span> Your Options</h2>
-  <p class="section-sub">See why ClawBox wins against cloud AI, DIY builds, and alternatives.</p>
+  <p class="section-sub">See why ClawBox wins against cloud AI, DIY builds, and VPS setups.</p>
   <div class="cmp">
   <table class="cmp-tbl">
     <thead>
@@ -178,30 +202,31 @@ nav{display:none}
       </tr>
     </thead>
     <tbody>
-      <tr><td>Price</td><td class="hi">€549 one-time</td><td>€20-50/month</td><td>€400-900 + time</td></tr>
+      <tr><td>Price</td><td class="hi">€549 one-time</td><td>€20-50/month forever</td><td>€400-900 + 10-20h setup</td></tr>
       <tr><td>Privacy</td><td class="hi"><span class="ck">✓</span> 100% local</td><td><span class="cx">✗</span> Cloud data</td><td><span class="ck">✓</span> Local</td></tr>
       <tr><td>Setup time</td><td class="hi">5 minutes</td><td>Instant (cloud)</td><td>10-20 hours</td></tr>
-      <tr><td>24/7 operation</td><td class="hi"><span class="ck">✓</span> Always on</td><td><span class="cx">✗</span> Manual</td><td>Depends</td></tr>
-      <tr><td>Power draw</td><td class="hi">20W</td><td>N/A</td><td>80-200W</td></tr>
-      <tr><td>Offline capable</td><td class="hi"><span class="ck">✓</span> Yes</td><td><span class="cx">✗</span> No</td><td>Maybe</td></tr>
+      <tr><td>24/7 agents</td><td class="hi"><span class="ck">✓</span> Always on</td><td><span class="cx">✗</span> Manual only</td><td>Depends on config</td></tr>
+      <tr><td>Power draw</td><td class="hi">15W</td><td>N/A (cloud)</td><td>80-200W</td></tr>
+      <tr><td>Offline capable</td><td class="hi"><span class="ck">✓</span> Local LLMs</td><td><span class="cx">✗</span> No</td><td>Maybe</td></tr>
+      <tr><td>Monthly cost</td><td class="hi">~€3 electricity</td><td>€20-50+</td><td>€10-25 electricity</td></tr>
     </tbody>
   </table>
   </div>
 </section>
 
 <section class="section">
-  <h2 class="section-title">Common <span>Questions</span></h2>
+  <h2 class="section-title">Agentic AI Hardware <span>FAQ</span></h2>
   <div>
-<div class="faq-item"><div class="faq-q">❓ What is agentic AI hardware?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-<div class="faq-item"><div class="faq-q">❓ How many agents can run simultaneously?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
-<div class="faq-item"><div class="faq-q">❓ Can it operate without supervision?</div><div class="faq-a">Ask your ClawBox — or <a href="https://openclawhardware.dev/" target="_blank">visit the store</a> for full details.</div></div>
+<div class="faq-item"><div class="faq-q">❓ What is agentic AI hardware and how does it differ from regular AI devices?</div><div class="faq-a">Agentic AI hardware is purpose-built to run autonomous AI agents that execute multi-step tasks independently. Unlike regular AI devices that respond to single prompts, agentic hardware like <a href="https://openclawhardware.dev/" target="_blank">ClawBox</a> maintains persistent agent sessions that handle email triage, web research, calendar management, and workflow automation around the clock without human intervention. The key difference is persistence — agents remember context, follow schedules, and chain tasks together automatically.</div></div>
+<div class="faq-item"><div class="faq-q">❓ Can agentic AI hardware run multiple agents simultaneously?</div><div class="faq-a">Yes. <a href="https://openclawhardware.dev/" target="_blank">ClawBox</a> runs multiple concurrent AI agents using the OpenClaw orchestration layer. The NVIDIA Jetson Orin Nano's 67 TOPS of compute and 8GB unified memory support parallel agent sessions — one handling emails while another monitors web data and a third manages scheduled tasks. Each agent operates in its own session with isolated memory and tools.</div></div>
+<div class="faq-item"><div class="faq-q">❓ Does agentic AI hardware need an internet connection to function?</div><div class="faq-a">ClawBox can run local language models completely offline at 15 tokens per second using on-device inference with the Jetson's GPU. For tasks requiring external APIs, cloud models, or web browsing, an internet connection extends capabilities significantly. The hybrid architecture means your agents keep working on local tasks even during connectivity interruptions — and resume cloud-dependent work automatically when the connection returns.</div></div>
   </div>
 </section>
 
 <section class="section">
   <div class="cta-box">
-    <h2>Ready to Get Your Own <span style="color:var(--accent)">Agentic AI Hardware</span>?</h2>
-    <p>€549 one-time. 30-day money-back guarantee. Ships in 1-3 business days.</p>
+    <h2>Ready for Your Own <span style="color:var(--accent)">Agentic AI Hardware</span>?</h2>
+    <p>€549 one-time. 30-day money-back guarantee. Ships in 1-3 business days. Free EU shipping.</p>
     <a href="https://openclawhardware.dev/openclaw-hardware" target="_blank" class="cta-btn" style="font-size:1.1rem;padding:1rem 3rem">Order ClawBox Now →</a>
     <p style="margin-top:1rem;font-size:.85rem;color:var(--muted)">Questions? Email <a href="mailto:yanko@idrobots.com">yanko@idrobots.com</a></p>
   </div>
